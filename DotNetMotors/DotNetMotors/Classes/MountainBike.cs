@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DotNetMotors.Classes
+{
+    class MountainBike : Bike
+    {
+        public override int Cost { get; set; } = 250;
+        public override bool SelfPropelled { get; set; } = false;
+
+        public override void DoWheelie()
+        {
+            Console.WriteLine("Only able to get enough speed going downhill.");
+        }
+
+        public override void Start()
+        {
+            Console.WriteLine("Peddle Power!");
+        }
+    }
+}
