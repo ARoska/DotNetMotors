@@ -41,7 +41,10 @@ Interfaces: My `INeedKey` and `INeedGas` are both Interfaces.  Not all of my `Co
 ------------------------------
 
 ## Change Log
+1.2: *Implement Unit Tests* - 29 March 2019
+
 1.1: *Created Class and Interface Heirarchies* - 27 March 2019
+
 1.0: *Initial Build* - 27 March 2019
 
 ------------------------------
