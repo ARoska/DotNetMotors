@@ -552,5 +552,42 @@ namespace DotNetMotorsTest
             Assert.True(mountainBike.SelfPropelled);
         }
 
+        [Fact]
+        public void MountainBikeIsAVehicle()
+        {
+            MountainBike mountainBike = new MountainBike();
+
+            Assert.True(mountainBike is Vehicle);
+        }
+
+        [Fact]
+        public void MotorcycleCanDriveWithVirtualMethod()
+        {
+            Motorcycle motorcycle = new Motorcycle();
+
+            string actual = motorcycle.Drive();
+
+            Assert.Equal("Vroom vroom!", actual);
+        }
+
+        [Fact]
+        public void MotorcycleCanBeStartedWithOveriddenMethod()
+        {
+            Motorcycle motorcycle = new Motorcycle();
+
+            bool actual = motorcycle.Start();
+
+            Assert.True(actual);
+        }
+
+        [Fact]
+        public void BRZCanHonkHorn()
+        {
+            BRZ brz = new BRZ();
+
+            string actual = brz.Honk();
+
+            Assert.Equal("Honk honk!", actual);
+        }
     }
 }

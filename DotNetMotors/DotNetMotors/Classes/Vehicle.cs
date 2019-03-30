@@ -10,7 +10,7 @@ namespace DotNetMotors.Classes
         public abstract int Cost { get; set; }
         public virtual bool SelfPropelled { get; set; } = true;
 
-        public abstract void Start();
+        public abstract bool Start();
         public virtual string Drive()
         {
             return "Vroom vroom!";

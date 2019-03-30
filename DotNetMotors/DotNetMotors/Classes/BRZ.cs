@@ -9,9 +9,10 @@ namespace DotNetMotors.Classes
         public override bool BackseatSpace { get; set; } = false;
         public override int Cost { get; set; } = 50000;
 
-        public override void Start()
+        public override bool Start()
         {
             Console.WriteLine(DoTheThing());
+            return true;
         }
 
         public string DoTheThing()

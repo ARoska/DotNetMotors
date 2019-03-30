@@ -14,9 +14,10 @@ namespace DotNetMotors.Classes
             Console.WriteLine("Only able to get enough speed going downhill.");
         }
 
-        public override void Start()
+        public override bool Start()
         {
             Console.WriteLine("Peddle Power!");
+            return true;
         }
     }
 }

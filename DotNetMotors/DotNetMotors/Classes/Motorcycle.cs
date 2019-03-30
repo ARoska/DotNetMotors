@@ -20,9 +20,10 @@ namespace DotNetMotors.Classes
             return 2;
         }
 
-        public override void Start()
+        public override bool Start()
         {
             Console.WriteLine(UseKey());
+            return true;
         }
 
         public string UseKey()
