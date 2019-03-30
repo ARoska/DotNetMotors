@@ -18,8 +18,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void BRZCanHave4Doors()
         {
-            BRZ brz = new BRZ();
-            brz.NumberOfDoors = 4;
+            BRZ brz = new BRZ
+            {
+                NumberOfDoors = 4
+            };
 
             Assert.Equal(4, brz.NumberOfDoors);
         }
@@ -35,8 +37,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void BRZCanHave5Wheels()
         {
-            BRZ brz = new BRZ();
-            brz.NumberOfWheels = 5;
+            BRZ brz = new BRZ
+            {
+                NumberOfWheels = 5
+            };
 
             Assert.Equal(5, brz.NumberOfWheels);
         }
@@ -52,8 +56,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void BRZCanCostEvenMore()
         {
-            BRZ brz = new BRZ();
-            brz.Cost = 75000;
+            BRZ brz = new BRZ
+            {
+                Cost = 75000
+            };
 
             Assert.Equal(75000, brz.Cost);
         }
@@ -69,8 +75,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void BRZCanSomehowMagicallyHaveBackSeatSpace()
         {
-            BRZ brz = new BRZ();
-            brz.BackseatSpace = true;
+            BRZ brz = new BRZ
+            {
+                BackseatSpace = true
+            };
 
             Assert.True(brz.BackseatSpace);
         }
@@ -86,8 +94,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void BRZHasBrokenHorn()
         {
-            BRZ brz = new BRZ();
-            brz.HasHorn = false;
+            BRZ brz = new BRZ
+            {
+                HasHorn = false
+            };
 
             Assert.False(brz.HasHorn);
         }
@@ -103,10 +113,22 @@ namespace DotNetMotorsTest
         [Fact]
         public void BRZIsNotGoingAnywhere()
         {
-            BRZ brz = new BRZ();
-            brz.SelfPropelled = false;
+            BRZ brz = new BRZ
+            {
+                SelfPropelled = false
+            };
 
             Assert.False(brz.SelfPropelled);
+        }
+
+        [Fact]
+        public void BRZCanBeFilledWith18GallonsOfGas()
+        {
+            BRZ brz = new BRZ();
+
+            int actual = brz.FillWithGas();
+
+            Assert.Equal(18, actual);
         }
 
         [Fact]
@@ -120,8 +142,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void TurcellCanHave3Doors()
         {
-            Turcell turcell = new Turcell();
-            turcell.NumberOfDoors = 3;
+            Turcell turcell = new Turcell
+            {
+                NumberOfDoors = 3
+            };
 
             Assert.Equal(3, turcell.NumberOfDoors);
         }
@@ -137,8 +161,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void TurcellCanHave3Wheels()
         {
-            Turcell turcell = new Turcell();
-            turcell.NumberOfWheels = 3;
+            Turcell turcell = new Turcell
+            {
+                NumberOfWheels = 3
+            };
 
             Assert.Equal(3, turcell.NumberOfWheels);
         }
@@ -154,8 +180,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void TurcellCanCostEvenLess()
         {
-            Turcell turcell = new Turcell();
-            turcell.Cost = 500;
+            Turcell turcell = new Turcell
+            {
+                Cost = 500
+            };
 
             Assert.Equal(500, turcell.Cost);
         }
@@ -171,8 +199,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void TurcellCanHaveFullBackSeat()
         {
-            Turcell turcell = new Turcell();
-            turcell.BackseatSpace = false;
+            Turcell turcell = new Turcell
+            {
+                BackseatSpace = false
+            };
 
             Assert.False(turcell.BackseatSpace);
         }
@@ -188,8 +218,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void TurcellHasBrokenHorn()
         {
-            Turcell turcell = new Turcell();
-            turcell.HasHorn = false;
+            Turcell turcell = new Turcell
+            {
+                HasHorn = false
+            };
 
             Assert.False(turcell.HasHorn);
         }
@@ -205,10 +237,32 @@ namespace DotNetMotorsTest
         [Fact]
         public void TurcellIsBroken()
         {
-            Turcell turcell = new Turcell();
-            turcell.SelfPropelled = false;
+            Turcell turcell = new Turcell
+            {
+                SelfPropelled = false
+            };
 
             Assert.False(turcell.SelfPropelled);
+        }
+
+        [Fact]
+        public void TurcellCanBeFilledWith12GallonsOfGas()
+        {
+            Turcell turcell = new Turcell();
+
+            int actual = turcell.FillWithGas();
+
+            Assert.Equal(12, actual);
+        }
+
+        [Fact]
+        public void TurcellNeedsToTurnKey()
+        {
+            Turcell turcell = new Turcell();
+
+            string actual = turcell.UseKey();
+
+            Assert.Equal("Turns key.", actual);
         }
 
         [Fact]
@@ -222,8 +276,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void CamryCanHave2Doors()
         {
-            Camry camry = new Camry();
-            camry.NumberOfDoors = 2;
+            Camry camry = new Camry
+            {
+                NumberOfDoors = 2
+            };
 
             Assert.Equal(2, camry.NumberOfDoors);
         }
@@ -239,8 +295,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void CamryCanHave2Wheels()
         {
-            Camry camry = new Camry();
-            camry.NumberOfWheels = 2;
+            Camry camry = new Camry
+            {
+                NumberOfWheels = 2
+            };
 
             Assert.Equal(2, camry.NumberOfWheels);
         }
@@ -256,8 +314,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void CamryCanCostLess()
         {
-            Camry camry = new Camry();
-            camry.Cost = 10000;
+            Camry camry = new Camry
+            {
+                Cost = 10000
+            };
 
             Assert.Equal(10000, camry.Cost);
         }
@@ -273,8 +333,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void CamryHasBrokenHorn()
         {
-            Camry camry = new Camry();
-            camry.HasHorn = false;
+            Camry camry = new Camry
+            {
+                HasHorn = false
+            };
 
             Assert.False(camry.HasHorn);
         }
@@ -290,10 +352,32 @@ namespace DotNetMotorsTest
         [Fact]
         public void CamryIsBroken()
         {
-            Camry camry = new Camry();
-            camry.SelfPropelled = false;
+            Camry camry = new Camry
+            {
+                SelfPropelled = false
+            };
 
             Assert.False(camry.SelfPropelled);
+        }
+
+        [Fact]
+        public void CamryCanBeFilledWith15GallonsOfGas()
+        {
+            Camry camry = new Camry();
+
+            int expected = camry.FillWithGas();
+
+            Assert.Equal(15, expected);
+        }
+
+        [Fact]
+        public void CameryNeedsToTurnKey()
+        {
+            Camry camry = new Camry();
+
+            string actual = camry.UseKey();
+
+            Assert.Equal("Turns key.", actual);
         }
 
         [Fact]
@@ -307,8 +391,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void MotorcycleHas3Wheels()
         {
-            Motorcycle motorcycle = new Motorcycle();
-            motorcycle.NumberOfWheels = 3;
+            Motorcycle motorcycle = new Motorcycle
+            {
+                NumberOfWheels = 3
+            };
 
             Assert.Equal(3, motorcycle.NumberOfWheels);
         }
@@ -324,8 +410,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void MotorcycleCanCostEvenMore()
         {
-            Motorcycle motorcycle = new Motorcycle();
-            motorcycle.Cost = 35000;
+            Motorcycle motorcycle = new Motorcycle
+            {
+                Cost = 35000
+            };
 
             Assert.Equal(35000, motorcycle.Cost);
         }
@@ -341,8 +429,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void MotorcycleDoesNotRequreLicenseInSomeCountries()
         {
-            Motorcycle motorcycle = new Motorcycle();
-            motorcycle.RequiresLicense = false;
+            Motorcycle motorcycle = new Motorcycle
+            {
+                RequiresLicense = false
+            };
 
             Assert.False(motorcycle.RequiresLicense);
         }
@@ -358,9 +448,32 @@ namespace DotNetMotorsTest
         [Fact]
         public void MotorcycleCannotGoOnOwn()
         {
-            Motorcycle motorcycle = new Motorcycle();
-            motorcycle.SelfPropelled = false;
+            Motorcycle motorcycle = new Motorcycle
+            {
+                SelfPropelled = false
+            };
+
             Assert.False(motorcycle.SelfPropelled);
+        }
+
+        [Fact]
+        public void MotorcycleCanBeFilledWith2GallonsOfGas()
+        {
+            Motorcycle motorcycle = new Motorcycle();
+
+            int actual = motorcycle.FillWithGas();
+
+            Assert.Equal(2, actual);
+        }
+
+        [Fact]
+        public void MotorcycleNeedsToTurnKey()
+        {
+            Motorcycle motorcycle = new Motorcycle();
+
+            string actual = motorcycle.UseKey();
+
+            Assert.Equal("Turns key.", actual);
         }
 
         [Fact]
@@ -374,8 +487,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void MountainBikeHas4Wheels()
         {
-            MountainBike mountainBike = new MountainBike();
-            mountainBike.NumberOfWheels = 4;
+            MountainBike mountainBike = new MountainBike
+            {
+                NumberOfWheels = 4
+            };
 
             Assert.Equal(4, mountainBike.NumberOfWheels);
         }
@@ -391,8 +506,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void MountainBikeCanCostMore()
         {
-            MountainBike mountainBike = new MountainBike();
-            mountainBike.Cost = 500;
+            MountainBike mountainBike = new MountainBike
+            {
+                Cost = 500
+            };
 
             Assert.Equal(500, mountainBike.Cost);
         }
@@ -408,8 +525,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void MountainBikeRequresLicense()
         {
-            MountainBike mountainBike = new MountainBike();
-            mountainBike.RequiresLicense = true;
+            MountainBike mountainBike = new MountainBike
+            {
+                RequiresLicense = true
+            };
 
             Assert.True(mountainBike.RequiresLicense);
         }
@@ -425,8 +544,10 @@ namespace DotNetMotorsTest
         [Fact]
         public void MountainBikeCanGoOnOwn()
         {
-            MountainBike mountainBike = new MountainBike();
-            mountainBike.SelfPropelled = true;
+            MountainBike mountainBike = new MountainBike
+            {
+                SelfPropelled = true
+            };
 
             Assert.True(mountainBike.SelfPropelled);
         }
