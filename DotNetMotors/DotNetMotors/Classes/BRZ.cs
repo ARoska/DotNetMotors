@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class BRZ : Coupe
+    public class BRZ : Coupe
     {
         public override bool BackseatSpace { get; set; } = false;
         public override int Cost { get; set; } = 50000;

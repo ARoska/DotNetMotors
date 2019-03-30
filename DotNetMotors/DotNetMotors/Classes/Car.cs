@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    abstract class Car : Vehicle
+    public abstract class Car : Vehicle
     {
         public override int NumberOfWheels { get; set; } = 4;
         public abstract int NumberOfDoors { get; set; }

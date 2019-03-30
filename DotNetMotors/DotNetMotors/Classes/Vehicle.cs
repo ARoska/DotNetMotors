@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    abstract class Vehicle
+    public abstract class Vehicle
     {
         public abstract int NumberOfWheels { get; set; }
         public abstract int Cost { get; set; }

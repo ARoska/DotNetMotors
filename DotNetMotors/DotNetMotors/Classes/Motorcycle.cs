@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Motorcycle : Bike, INeedKey, INeedGas
+    public class Motorcycle : Bike, INeedKey, INeedGas
     {
         public override int Cost { get; set; } = 24000;
         public override bool RequiresLicense { get; set; } = true;

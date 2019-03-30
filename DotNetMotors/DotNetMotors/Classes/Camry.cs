@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Camry : Car, INeedKey, INeedGas
+    public class Camry : Car, INeedKey, INeedGas
     {
         public override int NumberOfDoors { get; set; } = 4;
         public override int Cost { get; set; } = 15000;

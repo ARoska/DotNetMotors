@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class Turcell : Coupe, INeedKey
+    public class Turcell : Coupe, INeedKey
     {
         public override bool BackseatSpace { get; set; } = true;
         public override int Cost { get; set; } = 2000;

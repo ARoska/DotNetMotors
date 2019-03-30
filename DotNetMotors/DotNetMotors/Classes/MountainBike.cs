@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DotNetMotors.Classes
 {
-    class MountainBike : Bike
+    public class MountainBike : Bike
     {
         public override int Cost { get; set; } = 250;
         public override bool SelfPropelled { get; set; } = false;
