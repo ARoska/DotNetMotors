@@ -7,8 +7,9 @@ namespace DotNetMotors.Classes
     interface INeedGas
     {
         /// <summary>
-        /// Returns how much gas is needed to fill
+        /// Action of filling vehicle with gas.
         /// </summary>
+        /// <returns>How much gas is filled.</returns>
         int FillWithGas();
     }
 }

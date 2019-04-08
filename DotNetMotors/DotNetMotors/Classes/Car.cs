@@ -10,6 +10,10 @@ namespace DotNetMotors.Classes
         public abstract int NumberOfDoors { get; set; }
         public virtual bool HasHorn { get; set; } = true;
 
+        /// <summary>
+        /// Action of honking the horn.  Virtual.
+        /// </summary>
+        /// <returns>String representing action of honking horn.</returns>
         public virtual string Honk()
         {
             if (HasHorn == true)

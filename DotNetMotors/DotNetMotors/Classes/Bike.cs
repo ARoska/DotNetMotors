@@ -9,6 +9,9 @@ namespace DotNetMotors.Classes
         public override int NumberOfWheels { get; set; } = 2;
         public virtual bool RequiresLicense { get; set; } = false;
 
+        /// <summary>
+        /// Action of doing a wheelie.  Abstract.
+        /// </summary>
         public abstract void DoWheelie();
     }
 }
